@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("58D8707E-AF0E-4E19-9179-CDB070BFD2B0") = "CentralHomeHeat-test", "CentralHomeHeat-test.cppproj", "83D2C86D-F680-4EA7-B06A-59CAA1CA3D5B"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		83D2C86D-F680-4EA7-B06A-59CAA1CA3D5B.Debug|AVR.ActiveCfg = Debug|AVR
+		83D2C86D-F680-4EA7-B06A-59CAA1CA3D5B.Debug|AVR.Build.0 = Debug|AVR
+		83D2C86D-F680-4EA7-B06A-59CAA1CA3D5B.Release|AVR.ActiveCfg = Release|AVR
+		83D2C86D-F680-4EA7-B06A-59CAA1CA3D5B.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal 

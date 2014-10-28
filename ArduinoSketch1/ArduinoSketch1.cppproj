@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{51756830-c878-4a86-9ec8-2e49d158723e}</ProjectGuid>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>ArduinoSketch1</AssemblyName>
+    <Name>ArduinoSketch1</Name>
+    <RootNamespace>ArduinoSketch1</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>false</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>false</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.avrdragon</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber>
+      </ToolNumber>
+      <ToolName>Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <com_atmel_avrdbg_tool_avrdragon>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <IspClock>1000000</IspClock>
+          <JtagDbgClock>200000</JtagDbgClock>
+          <HvppClock>2000</HvppClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.avrdragon</ToolType>
+      <ToolNumber>00A200014473</ToolNumber>
+      <ToolName>AVR Dragon</ToolName>
+    </com_atmel_avrdbg_tool_avrdragon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>F_CPU=16000000</Value>
+            <Value>ARDUINO=104</Value>
+            <Value>ARDUINO_MEGA2560=1</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Headers</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+            <Value>F_CPU=16000000</Value>
+            <Value>ARDUINO=104</Value>
+            <Value>ARDUINO_MEGA2560=1</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Headers</Value>
+            <Value>D:\StandardCplusplus-master</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+            <Value>libArduinoCore.a</Value>
+            <Value>libEthernet.a</Value>
+            <Value>libLiquidCrystal.a</Value>
+            <Value>libSD.a</Value>
+            <Value>libSPI.a</Value>
+            <Value>libWire.a</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Libs\16</Value>
+            <Value>C:\Users\zdene_000\Documents\Arduino Template Express\Boards\Mega2560\Libs\16</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.LibrarySearchPaths>
+        <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+      </AvrGccCpp>
+    </ToolchainSettings>
+    <PreBuildEvent>..\scripts\prebuild.bat "$(MSBuildProjectName)" "$(OutputFileName)$(OutputFileExtension)" $(avrdevice) $(Configuration) "$(MSBuildProjectFile)" "$(SolutionDir)" "$(MSBuildProjectDirectory)\" "F1" "F2"</PreBuildEvent>
+    <PostBuildEvent>..\scripts\postbuild.bat "$(MSBuildProjectFullPath)" "$(MSBuildProjectName)" "$(OutputFileName)$(OutputFileExtension)" $(avrdevice) $(Configuration) "$(MSBuildProjectFile)" "$(SolutionDir)" "$(MSBuildProjectDirectory)\"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=16000000</Value>
+            <Value>ARDUINO=104</Value>
+            <Value>ARDUINO_MEGA2560=1</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Headers</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.Verbose>True</avrgcc.compiler.miscellaneous.Verbose>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=16000000</Value>
+            <Value>ARDUINO=104</Value>
+            <Value>ARDUINO_MEGA2560=1</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Headers</Value>
+            <Value>D:\StandardCplusplus-master</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcccpp.compiler.optimization.DebugLevel>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+        <avrgcccpp.compiler.miscellaneous.Verbose>True</avrgcccpp.compiler.miscellaneous.Verbose>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+            <Value>libArduinoCore.a</Value>
+            <Value>libEthernet.a</Value>
+            <Value>libLiquidCrystal.a</Value>
+            <Value>libSD.a</Value>
+            <Value>libSPI.a</Value>
+            <Value>libWire.a</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%25ATE_HOME%25\Boards\Mega2560\Libs\16</Value>
+            <Value>C:\Users\zdene_000\Documents\Arduino Template Express\Boards\Mega2560\Libs\16</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.LibrarySearchPaths>
+        <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+        <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+      </AvrGccCpp>
+    </ToolchainSettings>
+    <PreBuildEvent>..\scripts\prebuild.bat "$(MSBuildProjectName)" "$(OutputFileName)$(OutputFileExtension)" $(avrdevice) $(Configuration) "$(MSBuildProjectFile)" "$(SolutionDir)" "$(MSBuildProjectDirectory)\" "F1" "F2"</PreBuildEvent>
+    <PostBuildEvent>..\scripts\postbuild.bat "$(MSBuildProjectFullPath)" "$(MSBuildProjectName)" "$(OutputFileName)$(OutputFileExtension)" $(avrdevice) $(Configuration) "$(MSBuildProjectFile)" "$(SolutionDir)" "$(MSBuildProjectDirectory)\"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="dummyLcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Event.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Event.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LcdFactory.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCP3424.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCP3424.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MenuItem.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MenuItem.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MenuRenderer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MenuRenderer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModuleBase.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModuleManager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModuleManager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Modules.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Modules.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Modules\Modules.cpp" />
+    <Compile Include="Modules\Modules.cpp" />
+    <Compile Include="Precompiled.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="realLcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ScrachPad.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TemperatureMonitor.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TemperatureMonitor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utility\BuildDate.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utility\BuildInfo.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utility\Buildinfo.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utility\BuildNumber.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utility\UtilityMacros.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utility" />
+    <Folder Include="Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="notes.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="readme.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\deploy-fail99.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\deploy-success99.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\deployfail.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\deploysuccess.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\local-deploy99.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\localdeploy.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\makeit.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\makeit.xml">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\masterbuild.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\post-build00.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\post-build98.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\post-build99.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\postbuild.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\pre-build00.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\pre-build98.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\pre-build99.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\prebuild.bat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Scripts\targetboards.xml">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
